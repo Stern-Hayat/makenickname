@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include <stdlib.h>  // rand(), srand()
+#include <time.h>
+
+int main(void){
+ 
+ char boin[] = {'a','i','u','e','o'};
+ char shiin[] = {'a','i','u','e','o','k','s','t','n','h','m','y','r','w','g','z','d','b','p','-','x'};
+ 
+ int j,k,l,m,n,o,p,q;
+
+ srand(time(NULL)); 
+
+ for(int i = 0; i < 300; i++){
+
+  j = rand() % 21 + 0;
+  k = rand() % 21 + 0;
+  l = rand() % 21 + 0;
+  m = rand() % 21 + 0;
+ 
+  n = rand() % 4 + 0;
+  o = rand() % 4 + 0;
+  p = rand() % 4 + 0;
+  q = rand() % 4 + 0;
+  
+  printf("%c %c %c %c %c %c %c %c |", shiin[j],boin[n],shiin[k],boin[o],shiin[l],boin[p],shiin[m],boin[q]);
+
+ }
+ 
+return 0;
+
+}
